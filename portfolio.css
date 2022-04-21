@@ -15,19 +15,6 @@ body {
     padding: 20px 25px;
 }
 
-a#lydiaC:link {
-    color: #000000;
-}
-
-a#lydiaC:visited {
-    color: #000000;
-}
-
-a#lydiaC:hover {
-    color: #ffd500;
-    font-style: italic;
-}
-
 a:link {
     color: #5EAD7E;
     text-decoration: none;
