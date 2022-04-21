@@ -1,5 +1,5 @@
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Inter', Helvetica, sans-serif;
 }
 
 .navbar {
@@ -7,33 +7,45 @@ body {
     vertical-align: middle;
     padding-top: 50px;
     padding-bottom: 50px;
-    color: #000000;
 }
 
 #lydiaC {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     padding: 20px 25px;
 }
 
-a:link {
+a#lydiaC:link {
     color: #000000;
+}
+
+a#lydiaC:visited {
+    color: #000000;
+}
+
+a#lydiaC:hover {
+    color: #ffd500;
+    font-style: italic;
+}
+
+a:link {
+    color: #5EAD7E;
     text-decoration: none;
 }
 
 a:visited {
     text-decoration: none;
-    color: #000000;
+    color: #5EAD95;
 }
 
 a:hover {
     text-decoration: none;
-    color: #2b6242;
+    color: #2D9055;
 }
 
 a:active {
     text-decoration: none;
-    color: #439164;
+    color: #2D9055;
 }
 
 * {
