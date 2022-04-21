@@ -10,9 +10,22 @@ body {
 }
 
 #lydiaC {
-    font-size: 24px;
+    font-size: 24pt;
     font-weight: 500;
     padding: 20px 25px;
+}
+
+#lydiaC a:link {
+    color: #000000;
+}
+
+#lydiaC a:visited {
+    color: #000000;
+}
+
+#lydiaC a:hover {
+    color: #ffd500;
+    font-style: italic;
 }
 
 a:link {
