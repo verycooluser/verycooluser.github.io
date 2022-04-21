@@ -9,8 +9,12 @@ body {
     padding-bottom: 50px;
 }
 
+.navbar a:link, a:visited {
+    color:#000000;
+}
+
 #lydiaC {
-    font-size: 22pt;
+    font-size: 20pt;
     font-weight: 500;
     padding: 20px 25px;
 }
