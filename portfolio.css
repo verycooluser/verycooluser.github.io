@@ -39,16 +39,16 @@ a:link {
 
 a:visited {
     text-decoration: none;
-    color: #5EAD95;
+    color: #5EAD95 !important;
 }
 
 a:hover {
-    text-decoration: none;
-    color: #2D9055;
+    text-decoration: underline;
+    color: #2D9055 !important;
 }
 
 a:active {
-    text-decoration: none;
+    text-decoration: underline;
     color: #2D9055;
 }
 
