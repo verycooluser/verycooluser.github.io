@@ -1,3 +1,39 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+.navbar {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #000000;
+}
+
+#lydiaC {
+    font-size: 24px;
+}
+
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #2b6242;
+}
+
+a:active {
+    text-decoration: none;
+    color: #439164;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -5,15 +41,6 @@
 [class*="col-"] {
     float: left;
     padding: 25px;
-}
-
-body {
-    font-family: Helvetica, sans-serif;
-}
-
-.navbar {
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 /* For mobile phones: */
