@@ -9,10 +9,6 @@ body {
     padding-bottom: 50px;
 }
 
-.navbar a:link, a:visited {
-    color:#000000 !important;
-}
-
 #lydiaC {
     font-size: 20pt;
     font-weight: 500;
@@ -20,16 +16,29 @@ body {
 }
 
 #lydiaC a:link {
+    text-decoration: none;
     color: #000000;
 }
 
 #lydiaC a:visited {
+    text-decoration: none;
     color: #000000;
 }
 
 #lydiaC a:hover {
+    text-decoration: none;
     color: #ffd500;
     font-style: italic;
+}
+
+.subpages a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.subpages a:visited {
+    text-decoration: none;
+    color: #000000
 }
 
 a:link {
@@ -39,12 +48,12 @@ a:link {
 
 a:visited {
     text-decoration: none;
-    color: #5EAD95 !important;
+    color: #5EAD95;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #2D9055 !important;
+    color: #2D9055;
 }
 
 a:active {
