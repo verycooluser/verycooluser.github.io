@@ -9,6 +9,15 @@ body {
     padding-bottom: 50px;
 }
 
+.button {
+    background-color: #ffffff;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
 #lydiaC {
     font-size: 20pt;
     font-weight: 500;
@@ -53,34 +62,19 @@ body {
     padding: 5px 10px;
     border-width: 2px;
     border-color: #AAD4BB;
-
 }
 
-a.footer:link {
+/*#pagetop:link {
     color: #ABD4BB;
     background-color: #ffffff;
     border-color: #ABD4BB;
     text-decoration: none;
-}
+}*/
 
-a.footer:visited {
-    color: #ABD4BB;
-    background-color: #ffffff;
-    border-color: #ABD4BB;
-    text-decoration: none;
-}
-
-a.footer:hover {
+a#pagetop:hover {
     color: #ffffff;
-    background-color: #2D9055;
-    border-color: #2D9055;
-    text-decoration: none;
-}
-
-a.footer:active {
-    color: #ffffff;
-    background-color: #2D9055;
-    border-color: #2D9055;
+    background-color: #5EAD7E;
+    border-color: #5EAD7E;
     text-decoration: none;
 }
 
