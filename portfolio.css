@@ -153,6 +153,28 @@ img, background-image {
     cursor: pointer;
 }
 
+.backpage {
+    font-size: 14pt;
+    color: #ABD4BB;
+    border-color: #ABD4BB;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 20px 0px;
+}
+
+.blurb {
+    background-color: #EAF4EE;
+    padding: 12.5px 24.5px;
+    border-style: none;
+    border-radius: 8px;
+    z-index: 2;
+    width: 33%;
+    float: right;
+    transform: translate(0px,-75px);
+}
+
 .quote {
     height: 100%;
     width: 100%;
@@ -247,8 +269,6 @@ img, background-image {
         align-items: center;
     }
 }
-
-
     
 #lydiaC {
     font-size: 20pt;
