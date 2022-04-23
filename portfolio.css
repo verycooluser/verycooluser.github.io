@@ -4,7 +4,83 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    vertical-align: middle;
+    color:#000000;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    vertical-align: middle;
+    color:#000000;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    vertical-align: middle;
+    color:#000000;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+    color:#5EAD7E;
+}
+
+h2 a:link {
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color:#000000;
+}
+
+h2 a:visited {
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color:#000000;
+}
+
+h2 a:hover {
+    font-size: 32px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: underline;
+    color:#5EAD7E;
+}
+
+h2 a:active {
+    font-size: 32px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: underline;
+    color:#5EAD7E;
+}
 
 .row::after {
     content: "";
