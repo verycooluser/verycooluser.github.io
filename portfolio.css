@@ -73,7 +73,6 @@ img, background-image {
     background-color: #ffffff;
     border: none;
     text-align: center;
-    display: inline-block;
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -86,6 +85,27 @@ img, background-image {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor:pointer
+}
+
+.words a:link p {
+    color: #000000;
+    text-decoration: none;
+}
+
+.words a:visited p {
+    color: #000000;
+    text-decoration: none;
+}
+
+.words a:hover p {
+    color: #2D9055;
+    text-decoration: underline;
+}
+
+.words a:active p {
+    color: #2D9055;
+    text-decoration: underline;
 }
 
 /*mobile phones*/
@@ -210,6 +230,7 @@ img, background-image {
     border-width: 2px;
     border-color: #AAD4BB;
     margin: 0px 50px;
+    display: inline-block;
 }
 
 a#pagetop:hover {
