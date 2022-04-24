@@ -164,6 +164,34 @@ img, background-image {
     margin: 20px 0px;
 }
 
+a.backpage:link {
+    color:#ABD4BB;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+a.backpage:visited {
+    color:#ABD4BB;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+a.backpage:hover {
+    color:#ffffff;
+    text-decoration: none;
+    background-color: #5EAD7E;
+    border-color: #5EAD7E;
+}
+
+a.backpage:active {
+    color:#ffffff;
+    text-decoration: none;
+    background-color: #5EAD7E;
+    border-color: #5EAD7E;
+}
+
 .blurb {
     background-color: #EAF4EE;
     padding: 12.5px 24.5px;
