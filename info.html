@@ -29,30 +29,46 @@
 
         <!--Content-->
         <div class="content row" style="position:relative">
+        <!--Row 1-->
             <div class="col-2">&nbsp;</div>
             <div class="col-3">
-                <a href="https://www.w3schools.com/"><img src="images/top_left.png" alt="Top Left Image" width="237px" height="237px"></a>
-                <a href="https://www.w3schools.com/"><img src="images/middle_left.png" alt="Middle Left Image" width="237px" height="237px" style="padding-top:25px"></a>
-                <a href="https://www.w3schools.com/"><img src="images/bottom_left.png" alt="Bottom Left Image" width="237px" height="237px" style="padding-top:25px"></a>
+                <h3>
+                    about
+                </h3>
             </div>
+            <div class="col-3">&nbsp;</div>
             <div class="col-3">
-                <a href="https://www.w3schools.com/"><img src="images/top_middle.png" alt="Top Middle Image" width="237px" height="237px"></a>
-                <div class="quote">
-                    <img src="images/BORDER.png" alt="About Me Quote" width="237px" height="237px">
-                    <div class="words">
-                        <a href="https://www.w3schools.com/"><p>Multimedia designer, illustrator, and current fashion student.<br><span style="font-size:24pt;text-align: center;">&#8594;</span></p></a>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="col-3">
-                <a href="https://www.w3schools.com/"><img src="images/far_right.png" alt="Far Right Image" width="237px" height="499px"></a>
+                <h3>
+                    contact
+                </h3>
             </div>
             <div class="col-1">&nbsp;</div>
-            <div class="col-6">
-                <a href="https://www.w3schools.com/"><img src="images/bottom_right.png" alt="Bottom Right Image" width="499px" height="237px"></a>
-            </div>
         </div>
+
+        <div class="content row">
+            <!--Row 2-->
+                <div class="col-2">&nbsp;</div>
+                <div class="col-3">
+                    <img src="images/about_image.png" alt="Lydia Charron Photo" width="237px" height="314px">
+                </div>
+                <div class="col-3 about">
+                    <p>
+                        I&apos;m a multimedia designer, illustrator, and current fashion student. I'm passionate about human-centred design, slow fashion, and an accessible, sustainable future for everyone.
+                    </p>
+                </div>
+                <div class="col-3">
+                    <form action="/formmail.php" method="post" enctype="text/plain" target="_blank">
+                        <label>Name</label><br>
+                        <input type="text" name="name" placeholder="your name"><br>
+                        <label>E-mail</label><br>
+                        <input type="text" required name="mail" placeholder="your e-mail"><br>
+                        <label>Message</label><br>
+                        <textarea placeholder="your message..." rows="3" required name="Message"></textarea><br>
+                        <button class="contact" type="submit" href="info.html">Submit</button>
+                    </form>
+                </div>
+                <div class="col-1">&nbsp;</div>
+            </div>
 
         <!--Footer-->
         <div class="footer row">

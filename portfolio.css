@@ -25,7 +25,7 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     font-style: normal;
     text-align: center;
@@ -156,6 +156,7 @@ img, background-image {
 .backpage {
     font-size: 14pt;
     color: #ABD4BB;
+    background-color: #ffffff;
     border-color: #ABD4BB;
     border-style: solid;
     border-width: 2px;
@@ -163,6 +164,39 @@ img, background-image {
     padding: 10px 20px;
     margin: 20px 0px;
 }
+
+.contact {
+    width: 100%;
+    font-size: 14pt;
+    color: #ffffff;
+    background-color: #2D9055;
+    border-color: #2D9055;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.contact:hover {
+    width: 100%;
+    font-size: 14pt;
+    color: #2D9055;
+    background-color: #ffffff;
+    border-color: #2D9055;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
 
 a.backpage:link {
     color:#ABD4BB;
@@ -201,6 +235,15 @@ a.backpage:active {
     width: 33%;
     float: right;
     transform: translate(0px,-75px);
+}
+
+.about {
+    background-color: #EAF4EE;
+    padding: 12.5px 24.5px;
+    border-style: none;
+    border-radius: 8px;
+    z-index: 2;
+    transform: translate(-100px, 350px);
 }
 
 .quote {
