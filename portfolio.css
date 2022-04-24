@@ -254,7 +254,7 @@ a.backpage:active {
     border-style: none;
     border-radius: 8px;
     z-index: 2;
-    transform: translate(-100px, 350px);
+    transform: translate(-100px, 250px);
 }
 
 .quote {
