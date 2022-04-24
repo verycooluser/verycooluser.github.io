@@ -51,19 +51,28 @@
                 <div class="col-3">
                     <img src="images/about_image.png" alt="Lydia Charron Photo" width="237px" height="314px">
                 </div>
-                <div class="col-3 about">
-                    <p>
+                <div class="col-3">
+                    <p class="about">
                         I&apos;m a multimedia designer, illustrator, and current fashion student. I'm passionate about human-centred design, slow fashion, and an accessible, sustainable future for everyone.
                     </p>
+                    <a href="https://www.behance.net/lydiacharron" width="30px !important" height="30px !important" style="float:left">
+                        <img src="/images/behance.png" alt="Link to my Behance profile" width="30px !important" height="30px !important" style="position:relative;">
+                    </a>
+                    <a href="http://instagram.com/lydiacharron" width="30px !important" height="30px !important" style="float:none">
+                        <img src="/images/instagram.png" alt="Link to my Instagram profile" width="30px!important" height="30px!important" style="position:relative;">
+                    </a>
+                    <a href="http://linkedin.com/in/lydia-charron-806010187/" width="30px !important" height="30px !important" style="float:right">
+                        <img src="/images/linkedin.png" alt="Link to my LinkedIn profile" width="30px!important" height="30px!important" style="position:relative;">
+                    </a>
                 </div>
                 <div class="col-3">
                     <form action="/formmail.php" method="post" enctype="text/plain" target="_blank">
                         <label>Name</label><br>
-                        <input type="text" name="name" placeholder="your name"><br>
-                        <label>E-mail</label><br>
-                        <input type="text" required name="mail" placeholder="your e-mail"><br>
-                        <label>Message</label><br>
-                        <textarea placeholder="your message..." rows="3" required name="Message"></textarea><br>
+                        <input class="inputbox" type="text" name="name" placeholder="your name"><br>
+                        <label>E-mail&ast;</label><br>
+                        <input class="inputbox" type="text" required name="mail" placeholder="your e-mail"><br>
+                        <label>Message&ast;</label><br>
+                        <textarea class="inputbox" placeholder="your message..." rows="5" required name="Message"></textarea><br>
                         <button class="contact" type="submit" href="info.html">Submit</button>
                     </form>
                 </div>
