@@ -9,9 +9,8 @@ author:
 #
 # The `>` after `description:` means to ignore line-breaks until next key. If
 #   you wish to omit the line-break after the end of text, use `>-` instead.
-description: > 
-  imagine you're my pet mouse in the pocket of my shirt
-
+description: imagine you're my pet mouse in the pocket of my shirt
+repository: verycooluser/verycooluser.github.io
 
 # Build settings
 # --------------
