@@ -7,13 +7,13 @@
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
   background-color: $background-color;
-  border-bottom: 1px solid $border-color-01;
+  border-bottom: none;
 }
 
 .site-title {
   @include relative-font-size(1.625);
   font-weight: 300;
-  margin-bottom: 0;
+  margin: 20px 0px;
   float: left;
 
   @include media-query($on-palm) {
