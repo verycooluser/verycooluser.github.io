@@ -215,6 +215,7 @@
 .post-list {
   margin-left: 0;
   list-style: none;
+  text-transform: lowercase;
 
   > li {
     margin-bottom: $spacing-unit;
@@ -224,6 +225,7 @@
 .post-meta {
   font-size: $small-font-size;
   color: $brand-color-dimmed;
+  text-transform: lowercase;
 }
 
 .post-link {
