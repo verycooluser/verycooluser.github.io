@@ -65,7 +65,7 @@ minima:
 #   Minima date format.
 #     The default value is "%b %d, %Y" (e.g. Nov 14, 2023).
 #     Refer to https://shopify.github.io/liquid/filters/date/ for valid values
-    date_format: "%b-%d-%Y"
+    date_format: "%b %d, %Y"
 #
 #   Social Media Links.
 #     Renders icons via Font Awesome Free webfonts CDN, based on ordered list of
@@ -85,4 +85,4 @@ minima:
 #     RSS / Atom feed link is always rendered as the last item of social-links
 #     list. Set below key to `true` to not have the link to feed rendered as
 #     part of social-links list.
-    hide_site_feed_link: false
+    hide_site_feed_link: true
