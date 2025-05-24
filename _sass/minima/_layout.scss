@@ -6,8 +6,6 @@
   width: 100%;
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
-  background-image: url(/images/starpants.svg);
-  background-repeat: repeat;
   border-bottom: none;
 }
 
@@ -122,7 +120,6 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $border-color-01;
   padding: $spacing-unit 0;
 }
 
