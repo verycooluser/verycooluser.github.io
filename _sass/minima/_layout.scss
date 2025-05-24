@@ -6,7 +6,8 @@
   width: 100%;
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
-  background-color: $background-color;
+  background-image: url(/images/starpants.svg);
+  background-repeat: repeat;
   border-bottom: none;
 }
 
