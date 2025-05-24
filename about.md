@@ -4,6 +4,6 @@ title: about
 permalink: /about/
 ---
 
-just a gal & her thoughts!
+![an_bag.gif](/images/an_bag.gif)
 
-![shit disturber cat](/images/shit-disturber-cat.png)
+just a gal & her thoughts!
