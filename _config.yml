@@ -86,3 +86,8 @@ minima:
 #     list. Set below key to `true` to not have the link to feed rendered as
 #     part of social-links list.
     hide_site_feed_link: true
+jekyll-admin:
+  # Set to `true` to enable the jekyll-admin plugin.
+  enabled: true
+  # Set to `false` to disable the jekyll-admin plugin.
+  
