@@ -4,8 +4,8 @@
       "name": "testing",
       "id": "x-coredata://78EE60C1-FEC4-4D6B-82A5-515BBA811CA3/ICNote/p3871",
       "created": "2025-12-06T21:26:43.000Z",
-      "modified": "2025-12-06T22:47:26.000Z",
-      "body": "<html><head>\n     <meta charset=\"UTF-8\">\n     <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <link rel=\"stylesheet\" href=\"style.css\">\n   <title>testing</title></head><body>\n    <div class=\"site-link\">\n      <a href=\"/\">Back to site</a>\n    </div>\n  <div><h1>testing</h1></div>\n<div>1, 2, 3, … on the 6th of december</div>\n<div><br></div>\n<div>pee?</div>\n\n    <div class=\"published-date\">Published on December 6, 2025</div>\n  </body></html>"
+      "modified": "2025-12-06T23:34:22.000Z",
+      "body": "<html><head>\n     <meta charset=\"UTF-8\">\n     <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <link rel=\"stylesheet\" href=\"style.css\">\n   <title>testing</title></head><body>\n    <div class=\"site-link\">\n      <a href=\"/\">Back to site</a>\n    </div>\n  <div><h1>testing</h1></div>\n<div>1, 2, 3, … on the 6th of december</div>\n<div>parti deux:</div>\n<div>this should show up once i commit the changes!</div>\n\n    <div class=\"published-date\">Published on December 6, 2025</div>\n  </body></html>"
     }
   ],
   "name": "winnifred"
