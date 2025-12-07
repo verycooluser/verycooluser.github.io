@@ -131,32 +131,37 @@ def strip_notes_to_blog_metadata(body_html: str) -> str:
 import shutil
 from urllib.parse import unquote
 
-def rewrite_image_paths_and_copy(html: str, note_html_path: Path) -> str:
+def rewrite_image_paths_and_copy(html: str, note_html_path: Path, slug: str) -> str:
     """Find <img src="..."> in the HTML, copy image files into IMAGES_DIR,
-    and rewrite the src to point to /assets/post-images/<filename>.
+    and rewrite the src to point to /assets/post-images/<slug>-NN.<ext>.
     """
     IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 
+    counter = 1  # per-note image counter
+
     def repl(match):
+        nonlocal counter
         src = match.group(1).strip()
+
         # Ignore data URLs or absolute http(s) URLs
         if src.startswith("http://") or src.startswith("https://") or src.startswith("data:"):
             return match.group(0)
 
         # Resolve the image path relative to the note's HTML file
-        # Unquote in case of spaces encoded as %20, etc.
         src_decoded = unquote(src)
         img_path = (note_html_path.parent / src_decoded).resolve()
 
         if img_path.exists():
-            # Use only the basename in the destination; you could also
-            # incorporate the note slug to avoid collisions if needed.
-            dest_name = img_path.name
+            ext = img_path.suffix or ".png"
+            dest_name = f"{slug}-{counter:02d}{ext}"
+            counter += 1
+
             dest_path = IMAGES_DIR / dest_name
             try:
                 shutil.copy2(img_path, dest_path)
             except Exception as e:
                 print(f"Warning: failed to copy image {img_path} -> {dest_path}: {e}")
+
             new_src = f"/assets/post-images/{dest_name}"
             return f'<img src="{new_src}"'
         else:
@@ -204,8 +209,8 @@ def convert_all_notes() -> None:
         default_title = html_path.stem
         title, body_html = extract_title_and_body(html, default_title)
         body_html = strip_notes_to_blog_metadata(body_html)
-        body_html = rewrite_image_paths_and_copy(body_html, html_path)
         slug = slugify(title)
+        body_html = rewrite_image_paths_and_copy(body_html, html_path, slug)
 
         # See if we already have a post for this slug
         existing = find_existing_post_for_slug(slug)
@@ -230,4 +235,18 @@ def convert_all_notes() -> None:
 
 if __name__ == "__main__":
     convert_all_notes()
+
+# After python3 script/notes_to_posts.py
+
+cd "$HOME/Desktop/verycooluser.github.io"
+python3 script/notes_to_posts.py
+
+# Downscale large images to a max dimension (e.g. 1600px) using macOS 'sips'
+cd "$HOME/Desktop/verycooluser.github.io/assets/post-images"
+
+for img in *.jpg *.jpeg *.png; do
+  [ -e "$img" ] || continue
+  # Resize only if larger than 1600px in either dimension
+  sips -Z 1600 "$img" >/dev/null 2>&1
+done
 
