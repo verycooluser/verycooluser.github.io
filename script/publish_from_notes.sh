@@ -27,3 +27,12 @@ else
   echo "Changes pushed ✅"
 fi
 
+# After converting notes to posts:
+python3 script/notes_to_posts.py
+
+# Resize large images
+cd "$HOME/Desktop/verycooluser.github.io/assets/post-images"
+for img in *.jpg *.jpeg *.png; do
+  [ -e "$img" ] || continue
+  sips -Z 1600 "$img" >/dev/null 2>&1
+done
