@@ -56,14 +56,14 @@ def extract_title_and_body(html: str, default_title: str) -> tuple[str, str]:
     return title_text, body_html
 
 
-def find_existing_post_for_slug(slug: str) -> Path | None:
+def find_existing_post_for_slug(slug: str):
     """Return an existing _posts file that ends with -slug.md, if any."""
     pattern = f"*-{slug}.md"
     matches = list(POSTS_DIR.glob(pattern))
     return matches[0] if matches else None
 
 
-def date_from_filename(name: str) -> date | None:
+def date_from_filename(name: str):
     """Parse YYYY-MM-DD from the start of a _posts filename."""
     try:
         prefix = name.split("-", 3)  # YYYY, MM, DD, rest
