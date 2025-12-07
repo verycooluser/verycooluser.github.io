@@ -235,18 +235,3 @@ def convert_all_notes() -> None:
 
 if __name__ == "__main__":
     convert_all_notes()
-
-# After python3 script/notes_to_posts.py
-
-cd "$HOME/Desktop/verycooluser.github.io"
-python3 script/notes_to_posts.py
-
-# Downscale large images to a max dimension (e.g. 1600px) using macOS 'sips'
-cd "$HOME/Desktop/verycooluser.github.io/assets/post-images"
-
-for img in *.jpg *.jpeg *.png; do
-  [ -e "$img" ] || continue
-  # Resize only if larger than 1600px in either dimension
-  sips -Z 1600 "$img" >/dev/null 2>&1
-done
-
