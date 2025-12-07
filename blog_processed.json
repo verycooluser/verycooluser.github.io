@@ -1,11 +1,11 @@
 {
   "notes": [
     {
-      "name": "testing",
+      "name": "successful test run!",
       "id": "x-coredata://78EE60C1-FEC4-4D6B-82A5-515BBA811CA3/ICNote/p3871",
       "created": "2025-12-06T21:26:43.000Z",
-      "modified": "2025-12-07T03:17:23.000Z",
-      "body": "<html><head>\n     <meta charset=\"UTF-8\">\n     <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <link rel=\"stylesheet\" href=\"style.css\">\n   <title>testing</title></head><body>\n    <div class=\"site-link\">\n      <a href=\"/\">Back to site</a>\n    </div>\n  <div><h1>testing</h1></div>\n<div>after about 5 hours, we now are able to publish from my cellphone &lt;3</div>\n<div><img style=\"max-width: 100%; max-height: 100%;\" src=\"images/image_f78b0549909cc308d2461e5f0b00ab4c.jpeg\"><br></div>\n\n    <div class=\"published-date\">Published on December 6, 2025</div>\n  </body></html>"
+      "modified": "2025-12-07T04:50:35.000Z",
+      "body": "<html><head>\n     <meta charset=\"UTF-8\">\n     <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <link rel=\"stylesheet\" href=\"style.css\">\n   <title>successful test run!</title></head><body>\n    <div class=\"site-link\">\n      <a href=\"/\">Back to site</a>\n    </div>\n  <div><h1>successful test run!</h1></div>\n<div><br></div>\n<div>after about 6-7 hours, i am now able to publish here from my cellphone &lt;3</div>\n<div><br></div>\n<div>the pipeline is that:</div>\n<ol>\n<li>i write something in the notes app (phone or desktop), then </li>\n<li>click (or tap, on my phone) a shortcut, that </li>\n<li>generates an empty .txt file in an iCloud folder</li>\n<li>which then triggers the “Automator” app on my computer</li>\n<li>to then run a bunch of script:</li>\n<ul>\n<li>first, a ruby/JS script that generates html (doctored from https://github.com/29decibel/notes-to-blog)</li>\n<li>then, a python script that turns it into a markdown file</li>\n<li>while a shell script compresses the images for web</li>\n</ul>\n<li>and also pushes &amp; commits the new content to github pages!</li>\n</ol>\n<div><span style=\"font-size: 12px\">– </span>which is where i host this self-published thing. :-)</div>\n<div><br></div>\n<div>i have a list of extra features i’d like to implement, but for now— my poor brain is going to bed!</div>\n<div><br></div>\n<div>here is beau on our new blanket, a sample from work:</div>\n<div><img style=\"max-width: 100%; max-height: 100%;\" src=\"images/image_f78b0549909cc308d2461e5f0b00ab4c.jpeg\"><br></div>\n\n    <div class=\"published-date\">Published on December 6, 2025</div>\n  </body></html>"
     }
   ],
   "name": "winnifred"
