@@ -20,6 +20,7 @@ from datetime import datetime, date
 NOTES_EXPORT_ROOT = Path("~/Desktop/notes-to-blog-output").expanduser()
 JEKYLL_ROOT = Path("~/Desktop/verycooluser.github.io").expanduser()
 POSTS_DIR = JEKYLL_ROOT / "_posts"
+IMAGES_DIR = JEKYLL_ROOT / "assets" / "post-images"
 
 
 # --- Helpers ----------------------------------------------------------------
@@ -127,6 +128,51 @@ def strip_notes_to_blog_metadata(body_html: str) -> str:
 
     return body_html.strip()
 
+import shutil
+from urllib.parse import unquote
+
+def rewrite_image_paths_and_copy(html: str, note_html_path: Path) -> str:
+    """Find <img src="..."> in the HTML, copy image files into IMAGES_DIR,
+    and rewrite the src to point to /assets/post-images/<filename>.
+    """
+    IMAGES_DIR.mkdir(parents=True, exist_ok=True)
+
+    def repl(match):
+        src = match.group(1).strip()
+        # Ignore data URLs or absolute http(s) URLs
+        if src.startswith("http://") or src.startswith("https://") or src.startswith("data:"):
+            return match.group(0)
+
+        # Resolve the image path relative to the note's HTML file
+        # Unquote in case of spaces encoded as %20, etc.
+        src_decoded = unquote(src)
+        img_path = (note_html_path.parent / src_decoded).resolve()
+
+        if img_path.exists():
+            # Use only the basename in the destination; you could also
+            # incorporate the note slug to avoid collisions if needed.
+            dest_name = img_path.name
+            dest_path = IMAGES_DIR / dest_name
+            try:
+                shutil.copy2(img_path, dest_path)
+            except Exception as e:
+                print(f"Warning: failed to copy image {img_path} -> {dest_path}: {e}")
+            new_src = f"/assets/post-images/{dest_name}"
+            return f'<img src="{new_src}"'
+        else:
+            print(f"Warning: image not found for src='{src}' resolved as {img_path}")
+            return match.group(0)
+
+    # Rewrite all img src="..."
+    new_html = re.sub(
+        r'<img\s+[^>]*src="([^"]+)"',
+        repl,
+        html,
+        flags=re.IGNORECASE,
+    )
+    return new_html
+
+
 # --- Main conversion --------------------------------------------------------
 
 def convert_all_notes() -> None:
@@ -158,6 +204,7 @@ def convert_all_notes() -> None:
         default_title = html_path.stem
         title, body_html = extract_title_and_body(html, default_title)
         body_html = strip_notes_to_blog_metadata(body_html)
+        body_html = rewrite_image_paths_and_copy(body_html, html_path)
         slug = slugify(title)
 
         # See if we already have a post for this slug
